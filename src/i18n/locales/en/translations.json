@@ -1,0 +1,23 @@
+{
+    "Login": {
+        "Header":"Welcome",
+        "SubHesder":"Please login to yout account",
+        "PlaceHolderUserName":"Email",
+        "PlaceHolderPassword":"Password",
+        "ButtonSubmit":"Login"
+    },
+    "Home": {
+        "AddImg":"Add image +"
+    },
+    "AddImg": {
+        "Cancel":"Cancel",
+        "Save":"Save",
+        "PalceHolderImgName":"Name",
+        "Header":"Add Image"
+    },
+    "ListImages": {
+        "View":"View",
+        "CopyUrl":"Copy Url",
+        "Delete":"Delete"
+    }
+}

@@ -1,0 +1,51 @@
+.add-image-container{
+    position: absolute;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    left: calc(50vw - (417px / 2)); 
+    top: 30%;
+    background: white;
+    border-radius: 10px;
+}
+.image-detail-container{
+    width: 417px;
+}
+.haeder-text{
+    font-size: 18px;
+    color: #424242;
+    font-weight: 600;
+}
+.first-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-container
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.x-button{
+    cursor: pointer;
+}
+.name-image{
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 30px;
+    direction: ltr;
+    margin: 20px 0;
+}

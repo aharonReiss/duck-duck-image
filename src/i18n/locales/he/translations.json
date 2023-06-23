@@ -1,0 +1,8 @@
+{
+    "Login": {
+        "Header":"התחברות",
+        "PlaceHolderUserName":"email adress \\ phone number",
+        "PlaceHolderPassword":"password",
+        "Continue":"By continuing you accept Privacy Policy and Term of Use"
+    }
+}
