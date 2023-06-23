@@ -1,7 +1,7 @@
 {
   "homepage": "http://aharonreiss.github.io/duck-duck-image/#",
   "name": "duckduckproject",
-  "version": "0.45.0",
+  "version": "0.9.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -23,7 +23,7 @@
     "start": "set HTTPS=true&&set SSL_CRT_FILE=./reactcert/cert.pem&& set SSL_KEY_FILE=./reactcert/key.pem&& set REACT_APP_BACK_URL=http://localhost:8000&& react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "set REACT_APP_BACK_URL=http://localhost:8000 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

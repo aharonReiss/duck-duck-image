@@ -41,7 +41,7 @@ function DropDragFiles(props:any) {
         onDragOver={handleDragOver}
         onDrop={handleDrop}
         >
-             <img src="/img/uplaodFileImg.svg" alt="" />
+             <img src="./img/uplaodFileImg.svg" alt="" />
             <p>Drog & Drop or</p><p>Browse</p>
         </div>
        )
