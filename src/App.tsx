@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import LoginPage from './pages/login/login';
 import HomePage from './pages/Home/Home';
@@ -7,7 +7,7 @@ import DisplayImage from './pages/DisplayImage/DisplayImage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path='/' element={<LoginPage />}></Route>
       <Route path='/login' element={<LoginPage />}></Route>
@@ -16,7 +16,7 @@ function App() {
         <HomePage />
       </PrivateRoute>}></Route>
     </Routes>
-      </BrowserRouter>
+      </HashRouter>
     
   );
 }
