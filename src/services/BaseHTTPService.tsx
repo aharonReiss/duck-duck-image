@@ -10,7 +10,7 @@ class BaseHTTPService{
     }  
     
     async httpGet(relativeUrl: string, headers? :any){
-        const url = this.baseUrl + relativeUrl;
+        const url = 'http://13.51.176.171' + relativeUrl;
         try{
             return this.http.get(url,headers)
             .then(async (res) => {
@@ -23,7 +23,7 @@ class BaseHTTPService{
     }
 
     async httpDelete(relativeUrl: string, headers? :any){
-        const url = this.baseUrl + relativeUrl;
+        const url = 'http://13.51.176.171' + relativeUrl;
         try{
             debugger;
             return this.http.del(url,undefined,headers)
@@ -38,7 +38,7 @@ class BaseHTTPService{
     }
 
     async httpPost(relativeUrl: string,body?: object,headers? :any){
-        const url = this.baseUrl + relativeUrl;
+        const url = 'http://13.51.176.171' + relativeUrl;
         try{
             return await this.http.post(url,body,headers)
             .then(async (res) => {
