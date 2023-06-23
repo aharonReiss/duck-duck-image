@@ -7,16 +7,7 @@ import DisplayImage from './pages/DisplayImage/DisplayImage';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<LoginPage />}></Route>
-      <Route path='/login' element={<LoginPage />}></Route>
-      <Route path='/displayImage/:id' element={<DisplayImage />}></Route>
-      <Route path='/homePage' element={<PrivateRoute>
-        <HomePage />
-      </PrivateRoute>}></Route>
-    </Routes>
-      </BrowserRouter>
+    <div>fbdbfdbdbd</div>
     
   );
 }
