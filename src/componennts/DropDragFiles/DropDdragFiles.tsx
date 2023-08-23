@@ -6,14 +6,27 @@ function DropDragFiles(props:any) {
     
     const [files,setFiles] = useState(null)
     useEffect(() => {
-        console.log(files)
-    },[files])
+        setFiles(null)
+    },[])
     const handleDragOver = (event:any) => {
        event.preventDefault()
+    }
+    const onUploadFile = (event:any) => {
+        event.preventDefault()
+        let idCardBase64 : any = '';
+        console.log(event.target.files[0])
+        getBase64(event.target.files[0], (result: any) => {
+            idCardBase64 = result;
+            console.log(idCardBase64)
+            debugger;
+            ImageStore.newImage.image = idCardBase64;
+            setFiles(idCardBase64);
+        });
     }
     const handleDrop = (event:any) => {
         event.preventDefault()
         let idCardBase64 : any = '';
+        console.log(event)
         getBase64(event.dataTransfer.files[0], (result: any) => {
             idCardBase64 = result;
             console.log(idCardBase64)
@@ -41,8 +54,12 @@ function DropDragFiles(props:any) {
         onDragOver={handleDragOver}
         onDrop={handleDrop}
         >
-             <img src="./img/uplaodFileImg.svg" alt="" />
-            <p>Drog & Drop or</p><p>Browse</p>
+            <img src={`${process.env.PUBLIC_URL}/img/uplaodFileImg.svg`} alt="" />
+            <p>Drog & Drop or
+                <label className="custom-file-upload">
+                    <input type="file" onChange={(e) => {onUploadFile(e)}}/>
+                    Browse
+                </label></p>
         </div>
        )
        }

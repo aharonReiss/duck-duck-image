@@ -1,3 +1,11 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    color: rgb(252, 141, 79);
+    margin-left: 10px;
+    cursor: pointer;
+}
 .dropzone{
     display: flex;
     flex-direction: column;

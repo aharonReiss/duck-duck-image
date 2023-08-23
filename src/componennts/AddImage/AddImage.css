@@ -1,11 +1,15 @@
+.container-size-add-image{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 57%; 
+    max-width: 417px;
+}
 .add-image-container{
-    position: absolute;
-    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
-    left: calc(50vw - (417px / 2)); 
-    top: 30%;
     background: white;
     border-radius: 10px;
 }

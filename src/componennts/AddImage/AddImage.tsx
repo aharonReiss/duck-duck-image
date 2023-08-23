@@ -14,6 +14,8 @@ function AddImage(props:any) {
     debugger;
     imageStore.toggleAddImagePopUp()
     await imageService.addImage(imageStore.newImage);
+    imageStore.newImage.image = '';
+    imageStore.newImage.name = '';
     const allImg = await imageService.getAllDuckImages(0,1000);
     imageStore.replaseImagesArray(allImg);
     console.log(allImg)
@@ -28,6 +30,7 @@ function AddImage(props:any) {
   }
   const { t } = useTranslation()
   return (
+    <div className='container-size-add-image'>
       <div className='add-image-container'>
         <div className='first-row'>
           <h2 className='haeder-text'>{t('AddImg.Header')}</h2>
@@ -44,6 +47,7 @@ function AddImage(props:any) {
                   <CustomButton text={t('AddImg.Save')} backroundcolor={'#FC8D4F'}width={'45%'} func={onSubmitAddImage}/>
               </div>
         </div>
+      </div>
       </div>
   )
 }

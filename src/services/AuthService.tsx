@@ -8,7 +8,7 @@ class AuthService extends BaseHTTPService{
             password: password
         }
 
-        return this.httpPost('/auth/login',body).then((responce) => {
+        return this.httpPost('/auth/login',body,{'Access-Control-Allow-Origin':'*'}).then((responce) => {
             return responce.data;
         })
     }

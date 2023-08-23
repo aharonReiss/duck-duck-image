@@ -15,6 +15,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    console.log(process.env.PUBLIC_URL)
     console.log(process.env['REACT_APP_BACK_URL'])
   },[])
 
@@ -47,12 +48,12 @@ function LoginPage() {
   return (
     <div className="container">
        <div className='right-side'>
-        <img src="./img/duckImgLogin.svg" alt="" />
+        <img src='/duck-duck-image/img/duckImgLogin.svg' alt="" />
        </div>
 
        <div className='left-side'>
          <div className='fields-container'>
-            <img src="./img/headerLogin.svg" alt="" />
+            <img src={'/duck-duck-image/img/headerLogin.svg'} alt="" />
             {/* <input type="email" placeholder={t('Login.PlaceHolderUserName')} onChange={(e) => onChangeUserName(e)}/> */}
             <CustomInput type={'email'} placeholder={t('Login.PlaceHolderUserName')} width={'100%'} onChangeInput={onChangeUserName}/>
             {/* <input type="password" placeholder={t('Login.PlaceHolderPassword')} onChange={(e) => onChangePassword(e)}/> */}

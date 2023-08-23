@@ -7,6 +7,23 @@
     flex-direction: row;
     align-items: center;
 }
+.arrow-container{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.logOutAction-container{
+    width: 100px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    margin-top: 25px;
+    color: #000000;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 5px 0;
+    cursor: pointer;
+}
 .home-elements-container{
     width: 90%;
     display: flex;
@@ -24,4 +41,8 @@
 }
 .header-login-img{
     width: 180px !important;
+}
+
+.user-details svg{
+    width: 10px !important;
 }

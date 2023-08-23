@@ -18,7 +18,7 @@ const HomePage = observer(() => {
       imageStore.replaseImagesArray(allImg);
     }
     getImages();
-  })
+  }, [])
   return (
     <>
     <div className={`HomeContainer ${ImageStore.isPopupAddImgOpen ? 'disabled-screen' : ''}`}>
